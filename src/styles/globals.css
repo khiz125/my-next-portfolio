@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  background: linear-gradient(45deg, #ffe6ea, #d8dfff);
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 2;
+  font-family: 'Poppins', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.wrap {
+	overflow: hidden;
+}
+
+h2 {
+  font-size: calc(4rem + ((1vw - 0.64rem) * 0.7143));
+  line-height: 1.3;
+}
+
+p {
+  display: block;
+  max-width: 640px;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0 2%;
+}
+
+li > a {
+  color: rgb(236, 96, 96);
+  text-decoration: none;
+}
+
+
+/*   media query   */
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
+  
+@media screen and (max-width: 640px) {
+  body {
+    line-height: 2;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p, summary {
+    margin-inline-start: 0.5em;
+    margin-inline-end: 0.5em;
+    font-size: 1.2rem;
+  }
+  
+  .job-photo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+
+  #job-experience {
+    height: 100vh;
+  }
+
+}
