@@ -1,0 +1,13 @@
+.navContainer {
+  width: 100%;
+  background-color: aliceblue;
+  position: fixed;
+  opacity: 0.8;
+  padding: 0 1% 0 0;
+  box-shadow: 1px 1px 1px 1px rgba(125, 125, 182, 0.2);;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}

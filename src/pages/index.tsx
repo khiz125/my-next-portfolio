@@ -2,8 +2,13 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
+import { useLocale } from "../hooks/useLocale"
+
 
 const Home: NextPage = () => {
+
+  const { t, locale } = useLocale();
+
   return (
     <div>
       <Head>
@@ -12,9 +17,9 @@ const Home: NextPage = () => {
       </Head>
       <div className='.wrap'>
         <section>
-          <h2>About this site</h2>
+          <h2>{t.About_this_site}</h2>
           <div>
-            <p>Hi! My name is Kenny. This is my first portfolio website. I am going to post my portfolio once I make.</p>
+            <p>{t.Greetings}</p>
           </div>
         </section>
       </div>
