@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import Nav from './Nav'
+import Top from '../pages/Top'
 import styles from '../styles/Layout.module.css'
 
 type Props = {
