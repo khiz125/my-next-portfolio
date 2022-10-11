@@ -1,7 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Site from './Site'
-import Image from 'next/image'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Site from './Site';
+import About from './About';
+import Image from 'next/image';
 
 import { useLocale } from "../hooks/useLocale"
 
@@ -18,6 +19,9 @@ const Home: NextPage = () => {
       </Head>
       <div className='.wrap'>
         <Site />
+      </div>
+      <div className='.wrap'>
+        <About />
       </div>
     </div>
   )

@@ -1,18 +1,18 @@
 import React from 'react'
 import { useLocale } from "../hooks/useLocale"
 
-const Site = () => {
+const About = () => {
 
   const { t, locale } = useLocale();
 
   return (
-    <section id="site">
-      <h2>{t.About_this_site}</h2>
+    <section id="about">
+      <h2>{t.About_me}</h2>
       <div>
-        <p>{t.Greetings}</p>
+        <p>{t.Introduce}</p>
       </div>
     </section>
   )
 }
 
-export default Site
+export default About
