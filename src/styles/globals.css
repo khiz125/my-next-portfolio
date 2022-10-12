@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   color: #333;
 }
@@ -16,10 +15,6 @@ body {
   line-height: 2;
   font-family: 'Poppins', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-.wrap {
-	overflow: hidden;
 }
 
 h2 {
@@ -43,12 +38,15 @@ li > a {
 }
 
 #top {
+  box-sizing: border-box;
   width: 100vw;
   height: 80vh;
-  position: 'relative'
+  position: relative;
+  overflow: hidden;
 }
 
 #site {
+  box-sizing: border-box;
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -59,13 +57,13 @@ li > a {
 }
 
 #about {
+  box-sizing: border-box;
   width: 100vw;
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 2%;
 }
 
 /*   media query   */
@@ -109,8 +107,9 @@ li > a {
     width: 85%;
   }
 
-  #job-experience {
-    height: 100vh;
+  #top {
+    width: 100%;
+    height: 50%;
   }
 
 }

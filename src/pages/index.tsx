@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Top from '../pages/Top'
 import Site from './Site';
 import About from './About';
 import Image from 'next/image';
@@ -17,12 +18,9 @@ const Home: NextPage = () => {
         <title>Kenny's portfolio</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
-      <div className='.wrap'>
-        <Site />
-      </div>
-      <div className='.wrap'>
-        <About />
-      </div>
+      <Top />
+      <Site />
+      <About />
     </div>
   )
 }

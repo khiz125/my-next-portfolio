@@ -1,6 +1,5 @@
-import React, { useRef, useCallback } from 'react'
+import React from 'react'
 import Link from 'next/link'
-import Top from '../pages/Top'
 import { Link as Scroll } from 'react-scroll'
 import { useLocale } from "../hooks/useLocale"
 import navStyles from '../styles/Nav.module.css'
@@ -36,7 +35,6 @@ const Nav: React.FC = () => {
           </li>
         </ul>
       </nav>
-      <Top />
     </>
   )
 }
