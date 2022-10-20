@@ -1,7 +1,7 @@
 export default {
   LANG: "日本語",
   About_this_site: "About this site",
-  Greetings: "Hi! My name is Kenny. This is my first portfolio website. I am going to post my portfolio once I make.",
+  Greetings: "Hi! My name is Kenny. This is my portfolio website. I am going to post my portfolio once I make.",
   About_me: "About me",
-  Introduce: "I'm currently woking as marketing researcher. These days I feel that I need a skill of data science more and more. So I am going to challenge new tasks and jobs to tech."
+  Introduce: "I'm software engineer and marketing researcher. I like thinking about UI, UX or design, and developing applications for those who are not really tech savvy. I'm also interested in field of artificial intelligence and machine learning."
 }
