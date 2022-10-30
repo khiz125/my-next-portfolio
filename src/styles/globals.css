@@ -37,9 +37,15 @@ li > a {
   text-decoration: none;
 }
 
+.lineSpacing {
+  margin-bottom: 3vh;
+  width: 100%;
+  text-align: center;
+}
+
 #top {
   box-sizing: border-box;
-  width: 100vw;
+  width: auto;
   height: 80vh;
   position: relative;
   overflow: hidden;
@@ -47,7 +53,7 @@ li > a {
 
 #site {
   box-sizing: border-box;
-  width: 100vw;
+  width: auto;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -58,7 +64,7 @@ li > a {
 
 #about {
   box-sizing: border-box;
-  width: 100vw;
+  width: auto;
   height: 80vh;
   display: flex;
   align-items: center;

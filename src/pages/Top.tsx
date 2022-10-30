@@ -8,7 +8,7 @@ const Top = () => {
   // const player = useRef<Player>(null);
 
   return (
-    <div id='top'>
+    <div id="top">
       <Player
         autoplay
         loop

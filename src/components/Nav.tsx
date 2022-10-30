@@ -6,7 +6,7 @@ import navStyles from '../styles/Nav.module.css'
 
 const Nav: React.FC = () => {
   const { t, locale } = useLocale();
-  
+
   return (
     <>
       <nav className={navStyles.navContainer}>
@@ -18,10 +18,10 @@ const Nav: React.FC = () => {
             <Scroll to='site' smooth={true} duration={600}>Site</Scroll>
           </li>
           <li>
-          <Scroll to='about' smooth={true} duration={600}>About</Scroll>
+            <Scroll to='about' smooth={true} duration={600}>About</Scroll>
           </li>
           <li>
-            <Link href='/experience'>Experience</Link>
+            <Scroll to='experience' smooth={true} duration={600}>Experience</Scroll>
           </li>
           <li>
             <Link href='/coding'>Codings</Link>

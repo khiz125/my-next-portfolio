@@ -6,12 +6,14 @@ const About = () => {
   const { t, locale } = useLocale();
 
   return (
-    <section id="about">
-      <h2>{t.About_me}</h2>
-      <div>
-        <p>{t.Introduce}</p>
-      </div>
-    </section>
+    <main id="about">
+      <section>
+        <h2>{t.About_me}</h2>
+        <div>
+          <p>{t.Introduce}</p>
+        </div>
+      </section>
+    </main>
   )
 }
 
