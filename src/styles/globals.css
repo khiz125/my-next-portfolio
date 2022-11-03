@@ -43,14 +43,6 @@ li > a {
   text-align: center;
 }
 
-#top {
-  box-sizing: border-box;
-  width: auto;
-  height: 80vh;
-  position: relative;
-  overflow: hidden;
-}
-
 #site {
   box-sizing: border-box;
   width: auto;

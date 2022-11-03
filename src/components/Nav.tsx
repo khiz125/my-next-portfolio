@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Link as Scroll } from 'react-scroll'
 import { useLocale } from "../hooks/useLocale"
 import navStyles from '../styles/Nav.module.css'
+import { motion, Variants } from "framer-motion";
 
 const Nav: React.FC = () => {
   const { t, locale } = useLocale();

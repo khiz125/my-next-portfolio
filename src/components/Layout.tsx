@@ -1,6 +1,6 @@
-import { ReactNode } from 'react'
-import Nav from './Nav'
-import styles from '../styles/Layout.module.css'
+import { ReactNode } from 'react';
+import Nav from './Nav';
+import styles from '../styles/Layout.module.css';
 
 type Props = {
   children?: ReactNode;
