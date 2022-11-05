@@ -1,25 +1,61 @@
 import React, { useState, useEffect } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 // import animationData from "../../public/assets/hi.json";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "../styles/Top.module.css";
 
 const Top = () => {
 
+  const items = [
+    {
+      id: 1,
+      text: "Hello!",
+      color: "#8e44ad"
+    },
+    {
+      id: 2,
+      text: "こんにちは!",
+      color: "#2980b9"
+    },
+    {
+      id: 3,
+      text: "Bonjour!",
+      color: "#c0392b"
+    },
+    {
+      id: 4,
+      text: "Hola!",
+      color: "#16a085"
+    },
+  ];
+
+  const [index, setIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((state) => {
+        if (state >= items.length - 1) return 0;
+        return state + 1;
+      });
+    }, 3000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
-    <div id="top" className={styles.text}>
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [50, 0] }}
-        transition={{ duration: 0.8, ease: "easeOut", repeat: Infinity, repeatDelay: 2 
-        }}
-      >
-        <div className={styles.wisteria}>Hello!</div>
-        <div className={styles.belize}>wonderful.</div>
-        <div className={styles.pomegranate}>fancy.</div>
-        <div className={styles.green}>beautiful.</div>
-        <div className={styles.midnight}>cheap.</div>
-      </motion.div>
+    <div id="top">
+      <AnimatePresence>
+        <motion.div
+          className={styles.text}
+          key={items[index].id}
+          style={{color: `${items[index].color}`}}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, y: [-20, 0] }}
+          exit={{ y: 20, opacity: 0 }}
+          transition={{ease: "easeInOut"}}
+        >
+          {items[index].text}
+        </motion.div>
+      </AnimatePresence>
       {/*
       <Player
         autoplay
@@ -30,7 +66,6 @@ const Top = () => {
         style={{ zIndex: 1 }}
       />
       */}
-      
     </div >
   )
 }
