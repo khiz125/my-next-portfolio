@@ -1,6 +1,6 @@
 * {
-  box-sizing: border-box;
   margin: 0;
+  color: #333;
 }
 
 html {
@@ -10,16 +10,11 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg, #ffe6ea, #d8dfff);
+  background: linear-gradient(45deg, #fff4f6, #eef1ff);
   font-size: 1.6rem;
-  color: #333;
   line-height: 2;
   font-family: 'Poppins', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-.wrap {
-	overflow: hidden;
 }
 
 h2 {
@@ -39,10 +34,24 @@ li {
 }
 
 li > a {
-  color: rgb(236, 96, 96);
   text-decoration: none;
 }
 
+.lineSpacing {
+  margin-bottom: 3vh;
+  width: 100%;
+  text-align: center;
+}
+
+#about {
+  box-sizing: border-box;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 /*   media query   */
 
@@ -55,7 +64,7 @@ li > a {
 @media screen and (max-width: 640px) {
   body {
     line-height: 2;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 100%;
   }
 
@@ -74,6 +83,10 @@ li > a {
     height: 5rem;
   }
 
+  ul {
+    padding: 0;
+  }
+
 }
 
 @media only screen and (min-width: 601px) {
@@ -81,8 +94,9 @@ li > a {
     width: 85%;
   }
 
-  #job-experience {
-    height: 100vh;
+  #top {
+    width: 100%;
+    height: 50%;
   }
 
 }

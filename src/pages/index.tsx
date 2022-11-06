@@ -1,24 +1,29 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Top from '../pages/Top'
+import Site from './Site';
+import About from './About';
+import JobHistory from './JobHistory';
+import Image from 'next/image';
+
+import { useLocale } from "../hooks/useLocale"
 
 
 const Home: NextPage = () => {
+
+  const { t, locale } = useLocale();
+
   return (
-    <div>
+    <>
       <Head>
         <title>Kenny's portfolio</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
-      <div className='.wrap'>
-        <section>
-          <h2>About this site</h2>
-          <div>
-            <p>Hi! My name is Kenny. This is my first portfolio website. I am going to post my portfolio once I make.</p>
-          </div>
-        </section>
-      </div>
-    </div>
+      <Top />
+      <Site />
+      <About />
+      <JobHistory />
+    </>
   )
 }
 
