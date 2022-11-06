@@ -1,14 +1,10 @@
-.jobExperience {
+.site {
+  box-sizing: border-box;
   width: auto;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.jobHistory {
-  display: flex;
-  flex-direction: column;
-  justify-items: start;
+  text-align: center;
 }

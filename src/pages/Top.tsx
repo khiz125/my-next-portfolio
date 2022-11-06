@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 // import animationData from "../../public/assets/hi.json";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, Variants, AnimatePresence } from "framer-motion";
 import styles from "../styles/Top.module.css";
 
 const Top = () => {
@@ -32,41 +32,69 @@ const Top = () => {
   const [index, setIndex] = useState<number>(0);
 
   useEffect(() => {
-    const id = setInterval(() => {
+    const time = setInterval(() => {
       setIndex((state) => {
         if (state >= items.length - 1) return 0;
         return state + 1;
       });
     }, 3000);
-    return () => clearInterval(id);
+    return () => clearInterval(time);
   }, []);
 
+  const container: Variants = {
+    hidden: {
+      opacity: 0
+    },
+    visible: (i: number = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.08, delayChildren: i * 0.5 }
+    })
+  };
+
+  const child: Variants = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 200
+      }
+    },
+    hidden: {
+      opacity: 0,
+      y: 20,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 200
+      }
+    }
+  };
+
   return (
-    <div id="top">
+    <main id="top">
       <AnimatePresence>
         <motion.div
           className={styles.text}
           key={items[index].id}
-          style={{color: `${items[index].color}`}}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, y: [-20, 0] }}
-          exit={{ y: 20, opacity: 0 }}
-          transition={{ease: "easeInOut"}}
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          exit={{opacity: 0}}
         >
-          {items[index].text}
+          {items[index].text.split('').map((letter: string, i) => (
+            <motion.span
+              style={{ color: `${items[index].color}` }}
+              key={i}
+              variants={child}
+            >
+              {letter}
+            </motion.span>
+          ))}
         </motion.div>
       </AnimatePresence>
-      {/*
-      <Player
-        autoplay
-        loop
-        src={animationData}
-        background='none'
-        speed={0.6}
-        style={{ zIndex: 1 }}
-      />
-      */}
-    </div >
+    </main >
   )
 }
 

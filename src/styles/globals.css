@@ -43,21 +43,10 @@ li > a {
   text-align: center;
 }
 
-#site {
-  box-sizing: border-box;
-  width: auto;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
 #about {
   box-sizing: border-box;
   width: auto;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
