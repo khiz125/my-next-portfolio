@@ -14,7 +14,6 @@ const Site = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ amount: 'all' }}
         transition={{ duration: 0.8 }}
-        exit={{ opacity: 1 }}
       >
         <h2>{t.About_this_site}</h2>
         <div>
