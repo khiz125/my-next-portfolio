@@ -8,5 +8,17 @@ export default {
   Job_comment: "I would like to share my job experience.",
   Job_1: "Marketing Specialist / 2013 - Present",
   Job_1_detail_1: "- Marketing company, Japan.",
-  Job_1_detail_2: "- Analyze market, consumers, competitors of client in Retail business."
+  Job_1_detail_2: "- Analyze market, consumers, competitors of client in Retail business.",
+  Job_2: "Production Specialist / 2012 - 2013",
+  Job_2_detail_1: "- Food company, Japan.",
+  Job_2_detail_2: "- Sales dealing and maintaining strong relationship with over 60 of associate customers.",
+  Job_3: "Sales / 2010 - 2011",
+  Job_3_detail_1: "- Manufacturing company, Japan.",
+  Job_3_detail_2: "- Consulting and making presentation of improved production process, such as cutting cost of food material and other expense for customers.",
+  Job_4: "Luxury Hotel, Team leader, Assistant Manager / 2002 - 2010",
+  Job_4_detail_1: "- National chain luxury hotel, Japan.",
+  Job_4_detail_2: "- Taking well care of customers, managing restaurant / boutique service operation.",
+  Job_4_detail_3: "- National chain luxury hotel, US and Japan.",
+  Job_4_detail_4: "- Managed 40 line staff at restaurant and bar, 60 line staff at banquet service.",
+  Job_4_detail_5: "- Serving well customers, taking care of wine orders and inventory."
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import meImage from '../../public/assets/me.jpg'
 import { useLocale } from "../hooks/useLocale";
 import { motion } from "framer-motion";
 
@@ -14,6 +16,9 @@ const About = () => {
         viewport={{ amount: 'all' }}
         transition={{ duration: 0.8 }}
       >
+        <div style={{ width: '50%' }}>
+          <Image src={meImage} layout='responsive' alt="cat on lap" />
+        </div>
         <h2>{t.About_me}</h2>
         <div>
           <p>{t.Introduce}</p>
