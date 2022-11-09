@@ -19,10 +19,10 @@ const Nav: React.FC = () => {
             <Scroll to='site' smooth={true} duration={600}>Site</Scroll>
           </li>
           <li>
-            <Scroll to='about' smooth={true} duration={600}>About</Scroll>
+            <Scroll to='about' smooth={true} duration={600} offset={-100}>About</Scroll>
           </li>
           <li>
-            <Scroll to='experience' smooth={true} duration={600}>Experience</Scroll>
+            <Scroll to='experience' smooth={true} duration={600} offset={-100}>Experience</Scroll>
           </li>
           <li>
             <Link href='/coding'>Codings</Link>

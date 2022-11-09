@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocale } from "../hooks/useLocale";
 import jobStyles from "../styles/Job.module.css";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const JobHistory = () => {
 
@@ -13,7 +13,7 @@ const JobHistory = () => {
         className={jobStyles.jobExperience}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ amount: 'all' }}
+        viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 0.8 }}
       >
         <section className='lineSpacing'>
@@ -21,22 +21,22 @@ const JobHistory = () => {
           <p>{t.Job_comment}</p>
         </section>
         <section className={jobStyles.jobHistory}>
-          <div>
+          <div className={jobStyles.card}>
             <h3>{t.Job_1}</h3>
             <p>{t.Job_1_detail_1}</p>
             <p>{t.Job_1_detail_2}</p>
           </div>
-          <div>
+          <div className={jobStyles.card}>
             <h3>{t.Job_2}</h3>
             <p>{t.Job_2_detail_1}</p>
             <p>{t.Job_2_detail_2}</p>
           </div>
-          <div>
+          <div className={jobStyles.card}>
             <h3>{t.Job_3}</h3>
             <p>{t.Job_3_detail_1}</p>
             <p>{t.Job_3_detail_2}</p>
           </div>
-          <div>
+          <div className={jobStyles.card}>
             <h3>{t.Job_4}</h3>
             <p>{t.Job_4_detail_1}</p>
             <p>{t.Job_4_detail_2}</p>
