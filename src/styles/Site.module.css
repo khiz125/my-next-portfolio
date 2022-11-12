@@ -2,9 +2,18 @@
   box-sizing: border-box;
   width: auto;
   height: 100vh;
+  margin: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.greeting {
+  text-align: left;
+  margin: 2%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 2%;
 }

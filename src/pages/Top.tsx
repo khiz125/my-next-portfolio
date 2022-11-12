@@ -48,7 +48,10 @@ const Top = () => {
     visible: (i: number = 1) => ({
       opacity: 1,
       transition: { staggerChildren: 0.08, delayChildren: i * 0.5 }
-    })
+    }),
+    exit: {
+      opacity: 0
+    }
   };
 
   const child: Variants = {
@@ -75,13 +78,13 @@ const Top = () => {
   return (
     <main id="top">
       <AnimatePresence>
-        <motion.div
+        <motion.section
           className={styles.text}
           key={items[index].id}
           variants={container}
           initial="hidden"
           animate="visible"
-          exit={{opacity: 0}}
+          exit="exit"
         >
           {items[index].text.split('').map((letter: string, i) => (
             <motion.span
@@ -92,7 +95,7 @@ const Top = () => {
               {letter}
             </motion.span>
           ))}
-        </motion.div>
+        </motion.section>
       </AnimatePresence>
     </main >
   )
