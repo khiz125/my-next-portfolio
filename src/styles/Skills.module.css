@@ -1,7 +1,9 @@
-.introduce {
-  margin: 5%;
+.card {
+  width: 100%;
   background-color: white;
   border-radius: 2%;
+  padding: 2%;
+  margin: 2%;
 }
 
 .dash {

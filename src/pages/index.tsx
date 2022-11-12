@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Top from '../pages/Top'
 import Site from './Site';
 import About from './About';
+import Skills from './Skills';
 import JobHistory from './JobHistory';
 import Image from 'next/image';
 
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <Top />
       <Site />
       <About />
+      <Skills />
       <JobHistory />
     </>
   )
