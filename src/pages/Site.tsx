@@ -8,8 +8,9 @@ const Site = () => {
   const { t, locale } = useLocale();
 
   return (
-    <main id="site" className={styles.site}>
+    <main id="site">
       <motion.section
+        className={styles.site}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.5 }}

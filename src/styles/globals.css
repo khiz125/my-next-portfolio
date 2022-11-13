@@ -43,16 +43,6 @@ li > a {
   text-align: center;
 }
 
-#about {
-  box-sizing: border-box;
-  width: auto;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 /*   media query   */
 
 @media (min-width: 1200px) {

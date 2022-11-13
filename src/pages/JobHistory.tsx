@@ -8,7 +8,7 @@ const JobHistory = () => {
   const { t, locale } = useLocale();
 
   return (
-    <main id="experience">
+    <main id="job">
       <motion.section
         className={jobStyles.jobExperience}
         initial={{ opacity: 0 }}
