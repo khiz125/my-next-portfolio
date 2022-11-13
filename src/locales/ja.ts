@@ -1,4 +1,4 @@
-export default {
+const ja = {
   LANG: "English",
   About_this_site: "About this site",
   Greetings: "はじめまして！こちらはKennyのポートフォリオサイトです。私がこれまで個人やチームで制作してきた成果物や、WEB制作に関する記事を投稿していきいます。",
@@ -31,3 +31,5 @@ export default {
   Job_4_detail_5: "- レストラン接客業務",
   Footer_1: "最後までご覧いただきありがとうございます！"
 }
+
+export default ja;

@@ -39,6 +39,7 @@ const Top = () => {
       });
     }, 3000);
     return () => clearInterval(time);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const container: Variants = {
