@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import meImage from '../../public/assets/me.jpg'
+import meImage from '../../public/assets/me.jpg';
 import { useLocale } from "../hooks/useLocale";
 import { motion } from "framer-motion";
 import styles from "../styles/About.module.css";
@@ -13,6 +13,7 @@ const About = () => {
   return (
     <main id="about">
       <motion.section
+        className={styles.about}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.5 }}
@@ -21,7 +22,7 @@ const About = () => {
         <section className='lineSpacing'>
           <h2>{t.About_me}</h2>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{  width: '50%', margin: '2%' }}>
+            <div style={{ width: '50%', margin: '2%' }}>
               <Image
                 src={meImage}
                 layout='responsive'

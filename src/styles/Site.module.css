@@ -1,8 +1,6 @@
 .site {
-  box-sizing: border-box;
   width: auto;
   height: 100vh;
-  margin: 5%;
   display: flex;
   align-items: center;
   justify-content: center;

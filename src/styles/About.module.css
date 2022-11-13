@@ -1,10 +1,22 @@
+.about {
+  box-sizing: border-box;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .introduce {
   margin: 5%;
+  padding: 2%;
   background-color: white;
   border-radius: 2%;
 }
 
 .dash {
+  list-style-position: inside;
   list-style-type: disc;
   padding: 2% 0;
 }

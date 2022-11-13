@@ -5,6 +5,7 @@ import Site from './Site';
 import About from './About';
 import Skills from './Skills';
 import JobHistory from './JobHistory';
+import Footer from './Footer';
 import Image from 'next/image';
 
 import { useLocale } from "../hooks/useLocale"
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Kenny's portfolio</title>
+        <title>Kenny&#39s portfolio</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
       <Top />
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <About />
       <Skills />
       <JobHistory />
+      <Footer />
     </>
   )
 }

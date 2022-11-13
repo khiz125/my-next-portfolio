@@ -1,4 +1,4 @@
-export default {
+ const en ={
   LANG: "日本語",
   About_this_site: "About this site",
   Greetings: "Hi! My name is Kenny. This is my portfolio website. I am going to post my portfolio once I make.",
@@ -28,5 +28,8 @@ export default {
   Job_4_detail_2: "- Taking well care of customers, managing restaurant / boutique service operation.",
   Job_4_detail_3: "- National chain luxury hotel, US and Japan.",
   Job_4_detail_4: "- Managed 40 line staff at restaurant and bar, 60 line staff at banquet service.",
-  Job_4_detail_5: "- Serving well customers, taking care of wine orders and inventory."
+  Job_4_detail_5: "- Serving well customers, taking care of wine orders and inventory.",
+  Footer_1: "Thank you very much for watching till the end."
 }
+
+export default en;

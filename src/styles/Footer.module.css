@@ -1,0 +1,42 @@
+.footerContainer {
+  text-align: center;
+  margin-top: 20%;
+  padding: 10% 0;
+  background-color: #333;
+  width: 100vw;
+  height: 20vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  width: 50px;
+}
+
+.image:hover {
+  cursor : pointer;
+}
+
+.text {
+  text-align: center;
+  color: aliceblue;
+  margin: 3%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 800px) {
+  .footerContainer {
+    margin-top: 10%;
+    height: 25vh;
+  }
+
+  .text {
+    margin: 3%;
+    font-size: 2rem;
+  }
+}
