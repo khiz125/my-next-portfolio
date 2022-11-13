@@ -27,3 +27,9 @@
   list-style-type: disc;
   padding: 2% 0;
 }
+
+@media only screen and (min-width: 800px) {
+  .card  {
+    min-width: 300px;
+  }
+}

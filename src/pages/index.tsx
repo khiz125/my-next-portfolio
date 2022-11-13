@@ -5,6 +5,7 @@ import Site from './Site';
 import About from './About';
 import Skills from './Skills';
 import JobHistory from './JobHistory';
+import Footer from './Footer';
 import Image from 'next/image';
 
 import { useLocale } from "../hooks/useLocale"
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <About />
       <Skills />
       <JobHistory />
+      <Footer />
     </>
   )
 }

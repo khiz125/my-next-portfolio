@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import meImage from '../../public/assets/me.jpg'
+import meImage from '../../public/assets/me.jpg';
 import { useLocale } from "../hooks/useLocale";
 import { motion } from "framer-motion";
 import styles from "../styles/About.module.css";
