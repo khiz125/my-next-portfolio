@@ -6,6 +6,8 @@
   Introduce_1: "I'm software engineer and marketing researcher.",
   Introduce_2: "I like thinking about UI, UX or design, and developing applications for those who are not really tech savvy.",
   Introduce_3: "I'm also interested in field of artificial intelligence and machine learning.",
+  Projects: "My recent project",
+  Projects_1: "Here is the project I've worked.",
   Skills: "Languages and Dev tools I use",
   Skill_languages: "JavaScript,TypeScript,Python",
   Skill_frontend: "React,React Native,Next.js,HTML,CSS",

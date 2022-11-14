@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from 'next/image';
-import GithubLogo from '../../public/assets/github.png';
-import LinkedinLogo from '../../public/assets/linkedin.png';
+// import Image from 'next/image';
+// import GithubLogo from '../../public/assets/github.png';
+// import LinkedinLogo from '../../public/assets/linkedin.png';
 import { useLocale } from "../hooks/useLocale";
 import styles from "../styles/Footer.module.css";
 

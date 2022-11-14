@@ -13,7 +13,7 @@ const Skills = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.5 }}
       >
         <section className='lineSpacing'>
           <h2>{t.Skills}</h2>

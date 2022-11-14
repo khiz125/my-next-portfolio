@@ -6,6 +6,8 @@ const ja = {
   Introduce_1: "マーケティングスペシャリスト、ソフトウェアエンジニアのKennyです。昨今は、クライアントが蓄積してきたデータを強みとしてどう活用するかがマーケティングの業界で重要なテーマになっており、データサイエンスに関する技術への興味がきっかけで、コーディングを始めました。",
   Introduce_2: "UIやUXについて考えることが好きです。IT機器に不慣れな人でも使いやすく、シンプルなアプリのアイデアを日々考えています。",
   Introduce_3: "AIや機械学習の分野にも興味があります。",
+  Projects: "My recent project",
+  Projects_1: "開発に関わったプロジェクトです。",
   Skills: "使用言語、フレームワーク",
   Skill_languages: "JavaScript,TypeScript,Python",
   Skill_frontend: "React,React Native,Next.js,HTML,CSS",
