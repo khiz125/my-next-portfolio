@@ -1,7 +1,9 @@
 import React from 'react'
+import Link from 'next/link';
 import { useLocale } from "../hooks/useLocale";
 import { motion } from "framer-motion";
 import styles from "../styles/Projects.module.css";
+
 
 const Projects = () => {
 
@@ -21,6 +23,20 @@ const Projects = () => {
           <p>{t.Projects_1}</p>
         </section>
         <section className={styles.projectsCards}>
+          <Link href='/Tango'>
+            <a>
+              <motion.img
+                animate={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                className={styles.card}
+                src='/assets/tango.png'
+                alt="people catching words"
+              />
+            </a>
+          </Link>
+        </section>
+
+        {/* <section className={styles.projectsCards}>
           <a
             href="https://github.com/tangoatsumare/tangoatsumare-readme"
             target="_blank"
@@ -33,7 +49,7 @@ const Projects = () => {
             />
             <p className={styles.text}>Visit Github page</p>
           </a>
-        </section>
+        </section> */}
       </motion.section>
     </main>
 
