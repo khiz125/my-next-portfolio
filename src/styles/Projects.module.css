@@ -7,7 +7,6 @@
 .projectsCards {
   display: flex;
   gap: 5%;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -15,7 +14,7 @@
   width: 240px;
   object-fit: cover;
   border-radius: 2%;
-  margin: 0;
+  margin: 5%;
   padding: 0;
 }
 

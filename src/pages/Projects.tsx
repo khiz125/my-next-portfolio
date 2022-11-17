@@ -4,10 +4,31 @@ import { useLocale } from "../hooks/useLocale";
 import { motion } from "framer-motion";
 import styles from "../styles/Projects.module.css";
 
+interface Project {
+  id: number;
+  image: string;
+  alt: string;
+  projectRef: string;
+}
 
 const Projects = () => {
 
   const { t, locale } = useLocale();
+
+  const projects: Project[] = [
+    {
+      id: 1,
+      image: '/assets/tango.png',
+      alt: 'people catching words',
+      projectRef: 'Tango',
+    },
+    {
+      id: 2,
+      image: '/assets/denpoh.png',
+      alt: 'raspberrypie connecting linenotify',
+      projectRef: 'Denpoh',
+    }
+  ]
 
   return (
     <main id="project">
@@ -23,7 +44,22 @@ const Projects = () => {
           <p>{t.Projects_1}</p>
         </section>
         <section className={styles.projectsCards}>
-          <Link href='/Tango'>
+          {projects.map((project) => (
+            <Link href={'/'+`${project.projectRef}`} passHref>
+              <a>
+                <motion.img
+                layoutId={project.projectRef}
+                className={styles.card}
+                src={project.image}
+                alt={project.alt}
+                animate={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+                />
+              </a>
+            </Link>
+          ))}
+          {/* <Link href='/Tango'>
             <a>
               <motion.img
                 animate={{ scale: 1 }}
@@ -33,7 +69,7 @@ const Projects = () => {
                 alt="people catching words"
               />
             </a>
-          </Link>
+          </Link> */}
         </section>
 
         {/* <section className={styles.projectsCards}>

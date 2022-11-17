@@ -1,14 +1,28 @@
 import React from 'react';
+import { useRouter } from "next/router";
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import styles from "../styles/Tango.module.css";
 
 const Tango = () => {
+  // const {
+  //   query: { projectRef },
+  // } = useRouter();
+
   return (
     <main className={styles.container}>
       <h2 className={styles.text}>Tango Atsumare</h2>
       <section  className={styles.items}>
-        <Link href='/Projects'>
+      <Link href='/' passHref>
+          <a>
+            <motion.img
+              layoutId='Tango'
+              className={styles.card}
+              src='/assets/tango.png'
+            />
+          </a>
+        </Link>
+        {/* <Link href='/Projects' passHref>
           <a>
             <motion.img
               animate={{ scale: 1 }}
@@ -18,7 +32,7 @@ const Tango = () => {
               alt="people catching words"
             />
           </a>
-        </Link>
+        </Link> */}
         <div className={styles.text}>
           <p>Tango Atsumare helps users expand their vocabulary by making the process of creating high quality flashcards easier and more fun than ever before.</p>
         </div>
