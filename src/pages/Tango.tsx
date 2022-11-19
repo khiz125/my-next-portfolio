@@ -5,9 +5,7 @@ import { motion } from "framer-motion";
 import styles from "../styles/Tango.module.css";
 
 const Tango = () => {
-  // const {
-  //   query: { projectRef },
-  // } = useRouter();
+  const router = useRouter();
 
   return (
     <main className={styles.container}>
@@ -19,6 +17,7 @@ const Tango = () => {
               layoutId='Tango'
               className={styles.card}
               src='/assets/tango.png'
+              onClick={() => router.back()}
             />
           </a>
         </Link>

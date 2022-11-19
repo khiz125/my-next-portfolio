@@ -5,12 +5,10 @@ import { motion } from "framer-motion";
 import styles from "../styles/Tango.module.css";
 
 const Denpoh = () => {
-  // const {
-  //   query: { code: 'nextjs', page: 'Denpoh'},
-  // } = useRouter();
+  const router = useRouter();
 
   return (
-    <main className={styles.container}>
+    <main id='denpoh' className={styles.container}>
       <h2 className={styles.text}>One touch Den-Poh</h2>
       <section className={styles.items}>
         <Link href='/' passHref>
@@ -19,6 +17,7 @@ const Denpoh = () => {
               layoutId='Denpoh'
               className={styles.card}
               src='/assets/denpoh.png'
+              onClick={() => router.back()}
             />
           </a>
         </Link>

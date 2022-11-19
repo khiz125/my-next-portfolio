@@ -15,17 +15,20 @@
 }
 
 .card {
-  min-width: 160px;
+  text-align: left;
+  min-width: 180px;
   background-color: white;
   border-radius: 2%;
   margin: 2%;
-  padding: 2% 5%;
+}
+
+.card > ul {
+  padding: 5% 10%;
 }
 
 .dash {
   list-style-position: inside;
   list-style-type: disc;
-  padding: 2% 0;
 }
 
 @media only screen and (min-width: 800px) {

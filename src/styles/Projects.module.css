@@ -7,15 +7,13 @@
 .projectsCards {
   display: flex;
   gap: 5%;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .card {
   width: 240px;
   object-fit: cover;
   border-radius: 2%;
-  margin: 5%;
-  padding: 0;
 }
 
 /* .text {
@@ -40,7 +38,7 @@
 
 .card:hover {
   cursor : pointer;
-	transition: 0.3s;
+	transition: 0.1s;
 }
 
 /* .text:hover {
@@ -52,8 +50,15 @@
 
 
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 570px) {
   .card  {
     max-width: 240px;
+    margin: 5% 0;
+  }
+
+  .projectsCards {
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
   }
 }

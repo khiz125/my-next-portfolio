@@ -44,8 +44,8 @@ const Projects = () => {
           <p>{t.Projects_1}</p>
         </section>
         <section className={styles.projectsCards}>
-          {projects.map((project) => (
-            <Link href={'/'+`${project.projectRef}`} passHref>
+          {projects.map((project, index) => (
+            <Link href={'/'+`${project.projectRef}`}  key={index} passHref>
               <a>
                 <motion.img
                 layoutId={project.projectRef}
@@ -54,7 +54,7 @@ const Projects = () => {
                 alt={project.alt}
                 animate={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.2 }}
                 />
               </a>
             </Link>
