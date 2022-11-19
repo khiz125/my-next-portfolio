@@ -8,8 +8,18 @@
   flex-direction: column;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
 .introduce {
-  margin: 5%;
+  margin: 0 5%;
   padding: 2%;
   background-color: white;
   border-radius: 2%;

@@ -1,15 +1,20 @@
 .footerContainer {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 10%;
   padding: 10% 0;
   background-color: #333;
   width: 100vw;
-  height: 20vh;
+  height: 25vh;
+}
+
+.textContainer {
+  margin: 0;
 }
 
 .logo {
   display: flex;
-  justify-content: space-around;
+  gap: 5%;
+  justify-content: center;
   align-items: center;
 }
 
@@ -24,19 +29,26 @@
 .text {
   text-align: center;
   color: aliceblue;
-  margin: 3%;
-  font-size: 1rem;
+  margin: -5% 0 3% 0;
+  font-size: 2rem;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 450px) {
+  .footerContainer {
+    margin-top: 10%;
+    height: 20vh;
+  }
+
+  .text {
+    margin: 3%;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
   .footerContainer {
     margin-top: 10%;
     height: 25vh;
-  }
-
-  .text {
-    margin: 3%;
-    font-size: 2rem;
   }
 }
