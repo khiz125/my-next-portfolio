@@ -22,10 +22,13 @@ const Nav: React.FC = () => {
             <Scroll to='about' smooth={true} duration={600} offset={-50}>About</Scroll>
           </li>
           <li>
+            <Scroll to='project' smooth={true} duration={600} offset={-50}>Project</Scroll>
+          </li>
+          <li>
             <Scroll to='skills' smooth={true} duration={600} offset={-100}>Skills</Scroll>
           </li>
           <li>
-          <Scroll to='job' smooth={true} duration={600} offset={-50}>Experience</Scroll>
+            <Scroll to='job' smooth={true} duration={600} offset={-50}>Experience</Scroll>
           </li>
           <li>
             {t.LANG === "English" ?
