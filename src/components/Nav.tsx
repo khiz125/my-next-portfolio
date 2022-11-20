@@ -16,10 +16,10 @@ const Nav: React.FC = () => {
             <Scroll to='site' smooth={true} duration={600}>Site</Scroll>
           </li>
           <li>
-            <Scroll to='about' smooth={true} duration={600} offset={-50}>About</Scroll>
+            <Scroll to='about' smooth={true} duration={600}>About</Scroll>
           </li>
           <li>
-            <Scroll to='project' smooth={true} duration={600} offset={-50}>Project</Scroll>
+            <Scroll to='project' smooth={true} duration={600} offset={-150}>Project</Scroll>
           </li>
           <li>
             <Scroll to='skills' smooth={true} duration={600} offset={-100}>Skills</Scroll>
