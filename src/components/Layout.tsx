@@ -9,7 +9,6 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <Nav />
       <div className={styles.container}>
         <main className={styles.main}>{children}</main>
       </div>

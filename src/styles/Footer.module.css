@@ -23,6 +23,8 @@
 }
 
 .image:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.7;
   cursor : pointer;
 }
 
@@ -48,7 +50,15 @@
 
 @media only screen and (min-width: 800px) {
   .footerContainer {
-    margin-top: 10%;
+    margin-top: 2%;
     height: 25vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footerContainer {
+    margin-top: 0;
+    height: 200px;
+    padding: 7% 0 0 0;
   }
 }

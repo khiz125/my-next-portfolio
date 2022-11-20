@@ -31,6 +31,8 @@
   Job_4_detail_3: "- National chain luxury hotel, US and Japan.",
   Job_4_detail_4: "- Managed 40 line staff at restaurant and bar, 60 line staff at banquet service.",
   Job_4_detail_5: "- Serving well customers, taking care of wine orders and inventory.",
+  Project_Tango_1: "Tango Atsumare helps users expand their vocabulary by making the process of creating high quality flashcards easier and more fun than ever before.",
+  Project_Denpoh_1: "Den-Poh is the idea of Nurse Call notification system using raspberry pi.",
   Footer_1: "Thank you very much for watching till the end."
 }
 
