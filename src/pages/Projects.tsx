@@ -25,7 +25,7 @@ const Projects = () => {
     {
       id: 2,
       image: '/assets/denpoh.png',
-      alt: 'raspberrypie connecting linenotify',
+      alt: 'raspberrypie connecting LINE Notify',
       projectRef: 'Denpoh',
     }
   ]

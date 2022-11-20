@@ -2,10 +2,12 @@ import React from 'react';
 import { useRouter } from "next/router";
 import Link from 'next/link';
 import { motion } from "framer-motion";
-import styles from "../styles/Tango.module.css";
+import { useLocale } from "../hooks/useLocale";
+import styles from "../styles/Project.module.css";
 
-const Denpoh = () => {
+const Denpoh: React.FC = () => {
   const router = useRouter();
+  const { t, locale } = useLocale();
 
   return (
     <main id='denpoh' className={styles.container}>
@@ -22,19 +24,29 @@ const Denpoh = () => {
           </a>
         </Link>
         <div className={styles.text}>
-          <p>Den-Poh is the idea of Nurse Call notification system using raspberry pi.</p>
+          <p>{t.Project_Denpoh_1}</p>
         </div>
-        <a
+        <div className={styles.logoContainer}>
+          <a
           href="https://github.com/khiz125/notification_with_raspberry_pi"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className={styles.logo}
-            src='/assets/github.png'
-            alt="people catching words"
+            src='/assets/github_b.png'
+            alt="raspberrypie connecting LINE Notify"
           />
         </a>
+        <button
+            className={styles.backButton}
+            onClick={() => router.back()}
+          >
+            <a className={styles.buttonLine}
+            >Back to Project
+            </a>
+          </button>
+        </div>
       </section>
     </main>
 

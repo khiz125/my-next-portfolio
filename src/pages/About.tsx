@@ -9,6 +9,7 @@ import styles from "../styles/About.module.css";
 const About = () => {
 
   const { t, locale } = useLocale();
+  const style = { paddingBottom: `min(350px, ${100 / (480 / 653)}%)` }
 
   return (
     <main id="about">
@@ -21,14 +22,13 @@ const About = () => {
       >
         <section className='lineSpacing'>
           <h2>{t.About_me}</h2>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ width: '50%', margin: '2%' }}>
-              <Image
-                src={meImage}
-                layout='responsive'
-                alt="cat on lap"
-                style={{ borderRadius: '2%' }} />
-            </div>
+          <div className={styles.container} style={style}>
+            <Image
+              src={meImage}
+              layout="fill"
+              objectFit="contain"
+              alt="cat on lap"
+            />
           </div>
         </section>
         <section>

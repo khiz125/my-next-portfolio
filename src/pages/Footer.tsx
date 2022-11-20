@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <main id="footer" className={styles.footerContainer}>
-      <section>
+      <section className={styles.textContainer}>
         <p className={styles.text}>{t.Footer_1}</p>
       </section>
       <section className={styles.logo}>
