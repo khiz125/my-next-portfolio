@@ -1,10 +1,66 @@
+.container {
+  height: 70vh;
+}
+
 .text {
   position: relative;
   font-size: 6.5rem;
   width: auto;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.arrow {
+  width: 20%;
+}
+
+.toPages {
+  font-size: 3.5rem;
+  text-decoration: none;
+  gap: 5%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 10px 25px;
+  color: #404040;
+  transition: 0.3s ease-in-out;
+}
+
+.toPages:before {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, .1);
+  transform: translateX(-50%);
+}
+
+.toPages:after {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #404040;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+
+.toPages:hover {
+  opacity: 0.7;
+}
+
+.toPages:hover:after {
+  transform: scale(1, 1);
 }

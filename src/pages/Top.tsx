@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Player } from '@lottiefiles/react-lottie-player';
+import Link from 'next/link';
 // import animationData from "../../public/assets/hi.json";
 import { motion, Variants, AnimatePresence } from "framer-motion";
 import styles from "../styles/Top.module.css";
@@ -77,28 +77,39 @@ const Top = () => {
   };
 
   return (
-    <main id="top">
-      <AnimatePresence>
-        <motion.section
-          className={styles.text}
-          key={items[index].id}
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-        >
-          {items[index].text.split('').map((letter: string, i) => (
-            <motion.span
-              style={{ color: `${items[index].color}` }}
-              key={i}
-              variants={child}
-            >
-              {letter}
-            </motion.span>
-          ))}
-        </motion.section>
-      </AnimatePresence>
-    </main >
+    <>
+      <main id="top" className={styles.container}>
+        <AnimatePresence>
+          <motion.section
+            className={styles.text}
+            key={items[index].id}
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            {items[index].text.split('').map((letter: string, i) => (
+              <motion.span
+                style={{ color: `${items[index].color}` }}
+                key={i}
+                variants={child}
+              >
+                {letter}
+              </motion.span>
+            ))}
+          </motion.section>
+        </AnimatePresence>
+      </main >
+        <Link href='/Portfolio' passHref>
+        <a className={styles.toPages}>
+          About
+          <img
+            className={styles.arrow}
+            src='/assets/arrow.png'
+            alt='arrow down'
+          /></a>
+      </Link>
+    </>
   )
 }
 

@@ -31,6 +31,7 @@ const Projects = () => {
   ]
 
   return (
+    
     <main id="project">
       <motion.section
         className={styles.projects}
