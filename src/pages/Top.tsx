@@ -100,14 +100,20 @@ const Top = () => {
           </motion.section>
         </AnimatePresence>
       </main >
-        <Link href='/Portfolio' passHref>
-        <a className={styles.toPages}>
+      <Link href='/Portfolio' passHref>
+        <motion.a
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className={styles.toPages}
+        >
           About
           <img
             className={styles.arrow}
             src='/assets/arrow.png'
             alt='arrow down'
-          /></a>
+          />
+        </motion.a>
       </Link>
     </>
   )
