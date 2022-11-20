@@ -15,7 +15,7 @@ const About = () => {
     <main id="about">
       <motion.section
         className={styles.about}
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 0.5 }}

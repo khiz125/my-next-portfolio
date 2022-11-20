@@ -11,9 +11,6 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-  experimental: {
-    scrollRestoration: true
-  }
 }
 
 module.exports = nextConfig
