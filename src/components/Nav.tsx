@@ -13,9 +13,6 @@ const Nav: React.FC = () => {
       <nav className={navStyles.navContainer}>
         <ul className={navStyles.nav}>
           <li>
-            <Scroll to='top' smooth={true} duration={600}>Top</Scroll>
-          </li>
-          <li>
             <Scroll to='site' smooth={true} duration={600}>Site</Scroll>
           </li>
           <li>
