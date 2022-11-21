@@ -11,7 +11,7 @@ const Tango: React.FC = () => {
 
   return (
     <main className={styles.container}>
-      <h2 className={styles.text}>Tango Atsumare</h2>
+      <h2>Tango Atsumare</h2>
       <section className={styles.items}>
         <Link href='/' passHref>
           <a>
@@ -23,6 +23,14 @@ const Tango: React.FC = () => {
             />
           </a>
         </Link>
+        <div className={styles.badge}>
+          <img src="/assets/ts.svg" alt="" />
+          <img src="/assets/rn.svg" alt="" />
+          <img src="/assets/fb.svg" alt="" />
+          <img src="/assets/n.svg" alt="" />
+          <img src="/assets/mdb.svg" alt="" />
+          <img src="/assets/h.svg" alt="" />
+        </div>
         <div className={styles.text}>
           <p>{t.Project_Tango_1}</p>
         </div>
