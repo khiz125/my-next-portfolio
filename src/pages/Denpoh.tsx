@@ -11,7 +11,7 @@ const Denpoh: React.FC = () => {
 
   return (
     <main id='denpoh' className={styles.container}>
-      <h2 className={styles.text}>One touch Den-Poh</h2>
+      <h2>One touch Den-Poh</h2>
       <section className={styles.items}>
         <Link href='/' passHref>
           <a>
@@ -23,6 +23,10 @@ const Denpoh: React.FC = () => {
             />
           </a>
         </Link>
+        <div className={styles.badge}>
+          <img src="/assets/rp.svg" alt="" />
+          <img src="/assets/py.svg" alt="" />
+        </div>
         <div className={styles.text}>
           <p>{t.Project_Denpoh_1}</p>
         </div>

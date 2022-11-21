@@ -27,6 +27,12 @@
   transition: 0.3s;
 }
 
+.badge {
+  display: flex;
+  gap: 2%;
+  margin: 0 0 2% 0;
+}
+
 .logoContainer {
   display: flex;
   align-items: center;
@@ -47,6 +53,9 @@
 
 .text {
   max-width: 60%;
+  background-color: white;
+  padding: 2%;
+  border-radius: 2%;
 }
 
 .backButton {
