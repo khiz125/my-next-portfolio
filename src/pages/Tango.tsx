@@ -43,7 +43,7 @@ const Tango: React.FC = () => {
             <img
               className={styles.logo}
               src='/assets/github_b.png'
-              alt="people catching words"
+              alt=""
             />
           </a>
           <button
