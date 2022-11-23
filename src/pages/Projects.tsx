@@ -9,6 +9,7 @@ interface Project {
   image: string;
   alt: string;
   projectRef: string;
+  name: string
 }
 
 const Projects = () => {
@@ -21,17 +22,26 @@ const Projects = () => {
       image: '/assets/tango.png',
       alt: 'people catching words',
       projectRef: 'Tango',
+      name: 'Tango Atsumare'
     },
     {
       id: 2,
-      image: '/assets/denpoh.png',
+      image: '/assets/denpoh.svg',
       alt: 'raspberrypie connecting LINE Notify',
       projectRef: 'Denpoh',
+      name: 'One touch Den-Poh'
+    },
+    {
+      id: 3,
+      image: '/assets/chat.svg',
+      alt: 'speech bubble',
+      projectRef: 'SimpleChat',
+      name: 'Simple chat app'
     }
   ]
 
   return (
-    
+
     <main id="project">
       <motion.section
         className={styles.projects}
@@ -46,18 +56,21 @@ const Projects = () => {
         </section>
         <section className={styles.projectsCards}>
           {projects.map((project, index) => (
-            <Link href={'/'+`${project.projectRef}`}  key={index} passHref>
-              <a>
-                <motion.img
-                layoutId={project.projectRef}
-                className={styles.card}
-                src={project.image}
-                alt={project.alt}
-                animate={{ scale: 1 }}
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.2 }}
-                />
-              </a>
+            <Link href={'/' + `${project.projectRef}`} key={index} passHref>
+              <div>
+                <a>
+                  <motion.img
+                    layoutId={project.projectRef}
+                    className={styles.card}
+                    src={project.image}
+                    alt={project.alt}
+                    animate={{ scale: 1 }}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.2 }}
+                  />
+                </a>
+                <p>{project.name}</p>
+              </div>
             </Link>
           ))}
           {/* <Link href='/Tango'>
