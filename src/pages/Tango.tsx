@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useLocale } from "../hooks/useLocale";
 import styles from "../styles/Project.module.css";
 
-const Tango: React.FC = () => {
+const Tango = () => {
   const router = useRouter();
   const { t, locale } = useLocale();
 
