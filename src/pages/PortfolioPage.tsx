@@ -33,7 +33,7 @@ const PortfolioPage = () => {
         </div>
         <div className={styles.logoContainer}>
           <a
-            href="https://github.com/tangoatsumare/tangoatsumare-readme"
+            href="https://github.com/khiz125/my-next-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
