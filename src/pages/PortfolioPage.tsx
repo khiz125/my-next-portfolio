@@ -5,35 +5,35 @@ import { motion } from "framer-motion";
 import { useLocale } from "../hooks/useLocale";
 import styles from "../styles/Project.module.css";
 
-const SimpleChat = () => {
+const PortfolioPage = () => {
   const router = useRouter();
   const { t, locale } = useLocale();
 
   return (
     <main className={styles.container}>
-      <h2>Simple private chat app</h2>
+      <h2>Kenny's Portfolio</h2>
       <section className={styles.items}>
         <Link href='/' passHref>
           <a>
             <motion.img
-              layoutId='SimpleChat'
+              layoutId='PortfolioPage'
               className={styles.card}
-              src='/assets/chat.svg'
+              src='/assets/portfolio.svg'
               onClick={() => router.back()}
             />
           </a>
         </Link>
         <div className={styles.badge}>
           <img src="/assets/ts.svg" alt="" />
-          <img src="/assets/r.svg" alt="" />
-          <img src="/assets/fb.svg" alt="" />
+          <img src="/assets/nx.svg" alt="" />
+          <img src="/assets/fm.svg" alt="" />
         </div>
         <div className={styles.text}>
-          <p>{t.Project_Chat_1}</p>
+          <p>{t.Project_Portfolio_1}</p>
         </div>
         <div className={styles.logoContainer}>
           <a
-            href="https://github.com/khiz125/simple-chat-app"
+            href="https://github.com/tangoatsumare/tangoatsumare-readme"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -52,11 +52,10 @@ const SimpleChat = () => {
             </a>
           </button>
         </div>
-
       </section>
     </main>
 
   )
 }
 
-export default SimpleChat
+export default PortfolioPage

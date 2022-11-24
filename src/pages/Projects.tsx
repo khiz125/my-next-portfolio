@@ -37,7 +37,14 @@ const Projects = () => {
       alt: 'speech bubble',
       projectRef: 'SimpleChat',
       name: 'Simple chat app'
-    }
+    },
+    {
+      id: 4,
+      image: '/assets/portfolio.svg',
+      alt: 'greeting',
+      projectRef: 'PortfolioPage',
+      name: 'Portfolio site'
+    },
   ]
 
   return (
@@ -73,33 +80,7 @@ const Projects = () => {
               </div>
             </Link>
           ))}
-          {/* <Link href='/Tango'>
-            <a>
-              <motion.img
-                animate={{ scale: 1 }}
-                whileHover={{ scale: 1.1 }}
-                className={styles.card}
-                src='/assets/tango.png'
-                alt="people catching words"
-              />
-            </a>
-          </Link> */}
         </section>
-
-        {/* <section className={styles.projectsCards}>
-          <a
-            href="https://github.com/tangoatsumare/tangoatsumare-readme"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className={styles.card}
-              src='/assets/tango.png'
-              alt="people catching words"
-            />
-            <p className={styles.text}>Visit Github page</p>
-          </a>
-        </section> */}
       </motion.section>
     </main>
 
