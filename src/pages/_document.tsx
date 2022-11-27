@@ -12,6 +12,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>Kenny's portfolio</title>
+          <meta name="viewport" content="width=device-width,initial-scale=1.0" />
           <meta charSet="utf-8" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
