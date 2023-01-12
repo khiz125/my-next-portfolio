@@ -1,11 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import { Link as Scroll } from 'react-scroll'
 import { useLocale } from "../hooks/useLocale"
 import navStyles from '../styles/Nav.module.css'
 
 
 const Nav: React.FC = () => {
+
+  const router = useRouter();
+  const currentPath = router.pathname;
+
   const { t, locale } = useLocale();
 
   return (
@@ -29,9 +34,9 @@ const Nav: React.FC = () => {
           </li>
           <li>
             {t.LANG === "English" ?
-              <Link href='/' locale='en' passHref>{t.LANG}</Link>
+              <Link href={`/en${currentPath}`} locale='en' passHref>{t.LANG}</Link>
               :
-              <Link href='/' locale='ja' passHref>{t.LANG}</Link>
+              <Link href={`/ja${currentPath}`} locale='ja' passHref>{t.LANG}</Link>
             }
           </li>
         </ul>
