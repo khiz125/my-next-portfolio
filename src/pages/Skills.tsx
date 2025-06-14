@@ -50,6 +50,16 @@ const Skills = () => {
             </ul>
           </div>
           <div className={styles.card}>
+            <h3>Test</h3>
+            <ul>
+              {t.Skill_test.split(',').map((lang, index) => {
+                return (
+                  <li key={index} className={styles.dash}>{lang}</li>
+                )
+              })}
+            </ul>
+          </div>
+          <div className={styles.card}>
             <h3>Database</h3>
             <ul>
               {t.Skill_database.split(',').map((lang, index) => {

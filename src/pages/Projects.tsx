@@ -19,27 +19,34 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
+      image: '/assets/design-book.png',
+      alt: 'web design features',
+      projectRef: 'DesignBook',
+      name: 'Design book'
+    },
+    {
+      id: 2,
       image: '/assets/tango.png',
       alt: 'people catching words',
       projectRef: 'Tango',
       name: 'Tango Atsumare'
     },
     {
-      id: 2,
+      id: 3,
       image: '/assets/denpoh.svg',
       alt: 'raspberrypie connecting LINE Notify',
       projectRef: 'Denpoh',
       name: 'One touch Den-Poh'
     },
     {
-      id: 3,
+      id: 4,
       image: '/assets/chat.svg',
       alt: 'speech bubble',
       projectRef: 'SimpleChat',
       name: 'Simple chat app'
     },
     {
-      id: 4,
+      id: 5,
       image: '/assets/portfolio.svg',
       alt: 'greeting',
       projectRef: 'PortfolioPage',

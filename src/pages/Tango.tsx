@@ -55,10 +55,8 @@ const Tango = () => {
             </a>
           </button>
         </div>
-
       </section>
     </main>
-
   )
 }
 

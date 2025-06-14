@@ -22,27 +22,25 @@ const JobHistory = () => {
         </section>
         <section className={jobStyles.jobHistory}>
           <div className={jobStyles.card}>
+            <h3>{t.Job_now}</h3>
+            <p>{t.Job_now_detail_1}</p>
+          </div>
+          <div className={jobStyles.card}>
             <h3>{t.Job_1}</h3>
             <p>{t.Job_1_detail_1}</p>
-            <p>{t.Job_1_detail_2}</p>
           </div>
           <div className={jobStyles.card}>
             <h3>{t.Job_2}</h3>
             <p>{t.Job_2_detail_1}</p>
-            <p>{t.Job_2_detail_2}</p>
           </div>
           <div className={jobStyles.card}>
             <h3>{t.Job_3}</h3>
             <p>{t.Job_3_detail_1}</p>
-            <p>{t.Job_3_detail_2}</p>
           </div>
           <div className={jobStyles.card}>
             <h3>{t.Job_4}</h3>
             <p>{t.Job_4_detail_1}</p>
-            <p>{t.Job_4_detail_2}</p>
             <p>{t.Job_4_detail_3}</p>
-            <p>{t.Job_4_detail_4}</p>
-            <p>{t.Job_4_detail_5}</p>
           </div>
         </section>
       </motion.section>
